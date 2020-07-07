@@ -1,0 +1,37 @@
+.hero {
+  @media screen and (max-width: $tablets - 1) {
+    // margin-top: 95px;
+  }
+
+  // &-title {
+  //   margin-top: 0;
+  //   margin-bottom: 30px;
+  //   max-width: 360px;
+  //   margin-left: auto;
+  //   margin-right: auto;
+
+  //   color: $primary-white-color;
+  //   font-weight: 900;
+  //   font-size: 26px;
+  //   line-height: 1.6;
+  //   letter-spacing: 0.06em;
+  //   text-transform: uppercase;
+
+  //   @media screen and (min-width: $desktop) {
+  //     max-width: 696px;
+  //     font-size: 44px;
+  //     line-height: 1.36;
+  //   }
+  // }
+}
+.overlay {
+  max-width: 480px;
+  height: 580px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('../images/hiro.jpg');
+  background-color: rgba(47, 48, 58, 0.8);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
