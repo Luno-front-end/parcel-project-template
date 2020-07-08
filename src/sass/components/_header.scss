@@ -1,6 +1,6 @@
 .header {
   @media screen and (max-width: $tablets - 1) {
-    position: fixed;
+    position: relative;
     z-index: 20;
     top: 0;
     left: 0;
@@ -110,7 +110,7 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 1.39;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.1em;
 
     transition: $transition;
 
@@ -156,7 +156,7 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 1.39;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.1em;
 
     @media screen and (min-width: $tablets) {
       color: $primary-white-color;
@@ -178,15 +178,30 @@
   @media screen and (min-width: $desktop) {
   }
 }
+.item {
+  display: block;
+}
 
-.net-list {
-  // margin-bottom: 64px;
+.social-link {
+  @media screen and (max-width: $tablets - 1) {
+    & .item:first-child {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
 
-  // @media screen and (max-width: $tablets - 1) {
-  //   & .item:not(:last-child) {
-  //     margin-bottom: 24px;
-  //   }
-  // }
+      &::before {
+        content: ' ';
+        display: block;
+        background-color: $primary-color-text;
+        width: 60px;
+        height: 1px;
+        margin-right: 40px;
+      }
+    }
+    & .item:last-child {
+      margin-left: 100px;
+    }
+  }
 
   @media screen and (min-width: $tablets) {
     position: absolute;
@@ -205,7 +220,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.35;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.2em;
 
     transition: $transition;
 
