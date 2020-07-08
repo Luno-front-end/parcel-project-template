@@ -1,17 +1,29 @@
 .about-us{
+  position: relative;
   display: flex;
   padding-top: 84px;
   padding-bottom: 84px;
   background: #E5E5E5;
   h3{
+    position: relative;
     margin-top: 0;
     margin-bottom: 20px;
+    padding-left: 80px;
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #303030;
+    &::before{
+      content:"";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 60px;
+      height: 1px;
+      background: #303030;
+    }
   }
   h2{
     margin-top: 0;
@@ -71,6 +83,8 @@
   margin-right: 30px;
 @media screen and (max-width: 767px) {
   display: none}
+@media screen and (min-width: 768px) {
+    width: 50%;}
 @media screen and (min-width: 1280px) {
   display: flex;
   margin-right: 64px}
@@ -82,4 +96,8 @@
       margin-left: 30px}
     
   }
+}
+.about-text{
+  @media screen and (min-width: 768px) {
+   width: 50%;}
 }
