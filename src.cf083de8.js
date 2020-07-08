@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./..\\images\\hiro.jpg":[["hiro.1ba6826e.jpg","d16g"],"d16g"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/src.86ad1f0f.js.map
+//# sourceMappingURL=/src.cf083de8.js.map
