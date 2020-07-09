@@ -2,7 +2,10 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "main.scss"
+        "main.scss",
+        "utils/_variables.scss",
+        "components/_base.scss",
+        "components/_ourmasters.scss"
     ],
     "names": [],
     "file": "main.css"
