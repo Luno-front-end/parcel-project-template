@@ -64,6 +64,17 @@
   }
 }
 
+.slider-current {
+  fill: $primary-white-color;
+  margin-bottom: 12px;
+}
+.slider-next {
+  fill: $additional-color-text;
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
 .title-p {
   color: $color-rgba;
 
@@ -107,7 +118,18 @@
   @media screen and (min-width: $tablets) {
     max-width: 355px;
     padding-top: 156px;
-    margin-left: 240px;
+    margin-left: auto;
+    display: flex;
+  }
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+}
+.heading-container {
+  @media screen and (min-width: $tablets) {
+    margin-right: 77px;
   }
 }
 
