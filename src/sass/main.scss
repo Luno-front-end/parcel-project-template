@@ -1,4 +1,7 @@
-@import "./service-and-price";
+@import "./base/normalize";
+@import "./utils/variables";
+@import "./base/base";
+@import "./components/service-and-price";
 
 /*
  * Главный файл стилей.

@@ -1,3 +1,18 @@
+p, h2, ul, li{
+    margin: 0;
+    padding: 0;
+    display: block;
+
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 .default-section-service{
     background-color: $service-color;
     background-image: url(../images/services-and-price/mobile/small-size/background-image-services-mobile.png);
@@ -12,17 +27,17 @@
         background-image: url(../images/services-and-price/mobile/small-size/background-image-services-mobile@3x.png);
     }
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: $mobile) {
         background-image: url(../images/services-and-price/tablet/small-size/background-image-services-tablet.png);
         @media (min-resolution: 2dppx){
             background-image: url(../images/services-and-price/tablet/small-size/background-image-services-tablet@2x.png);
         }
         @media (min-resolution: 3dppx){
-            background-image: url(../../images/services-and-price/tablet/small-size/background-image-services-tablet@3x.png);
+            background-image: url(../images/services-and-price/tablet/small-size/background-image-services-tablet@3x.png);
         }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablets) {
         background-image: url(../images/services-and-price/pc/small-size/background-image-services-pc.png);
         @media (min-resolution: 2dppx){
             background-image: url(../images/services-and-price/pc/small-size/background-image-services-pc@2x.png);
@@ -36,11 +51,11 @@
 .section-service-price{
     padding-top: 84px;
     padding-bottom: 84px;
-    background-image: url(../images/other/img.png);
+    // background-image: url(../images/other/img.png);
 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
 }
 
 .description{
@@ -83,19 +98,24 @@
 .table-service{
     margin-bottom: 50px;
 
-    @media screen and (max-width: 767px) {
+    // @media screen and (max-width: 374px) {
+    //     padding: 15px;
+    // }
+
+
+    @media screen and (max-width: $tablets-min) {
         padding: 30px;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: $desktop-min) {
         padding: 30px 40px;
     }
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: $desktop-min) {
         background-image: linear-gradient(180deg, $primal-gradient-color 0%, $seconfary-gradient-color 100%);
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         display: flex;
         justify-content: center;
         // padding: 40px;
@@ -103,7 +123,7 @@
 }
 
 .scroll{
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         width: 585px;
         padding: 30px 40px;
 
@@ -136,15 +156,21 @@
     }
 
     &-border{
+        display: block;
         margin-right: 6px;
-        border-bottom: 1px solid rgba(157, 164, 189, 0.12);
-        // min-width: calc((100% - 6px) / 2);
+        border-bottom: 1px solid $border-service-section-color;
+        width: calc((100% - 6px) / 2);
         width: 100%;
+
+        @media screen and (max-width: 373px) {
+            width: 35%;
+        }
     }
 }
 
 
 .service{
+    display: block;
     margin-right: 6px;
     white-space: nowrap;
 
@@ -155,6 +181,12 @@
     letter-spacing: 0.02em;
 
     color: $additional-color-text;
+    @media screen and (max-width: 373px) {
+        white-space: unset;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
+    }
+
 }
 
 .price{
@@ -167,6 +199,11 @@
     letter-spacing: 0.02em;
 
     color: $additional-color-text;
+    
+    @media screen and (max-width: 373px){
+        display: flex;
+        align-items: flex-end;;
+    }
 
 }
 
@@ -188,7 +225,7 @@
 
     color: $primary-white-color;
 
-    transition: background-color 250ms $transition;
+    transition: background-color $transition;
 
     &:hover,:focus{
         background-color: $accent-color;
