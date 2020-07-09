@@ -49,6 +49,7 @@ p {
 }
 
 .feature-list {
+  display: grid;
   justify-content: center;
 
   @media screen and (min-width: $mobile) {
@@ -67,16 +68,19 @@ p {
 
 .feature-item {
   width: 193px;
+  height: 133px;
   padding: 20px 35px;
 
   background-color: $secondary-bg-color;
 
   @media screen and (min-width: $tablets) {
     width: 210px;
+    padding: 20px 44px;
   }
 
   @media screen and (min-width: $desktop) {
     width: 170px;
+    padding: 20px;
   }
 }
 
@@ -123,7 +127,7 @@ p {
 }
 
 .feature-desc {
-  margin-bottom: 20px;
+  margin: auto;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
