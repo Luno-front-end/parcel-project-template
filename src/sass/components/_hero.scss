@@ -87,8 +87,9 @@
     max-width: 306px;
   }
   @media screen and (min-width: $tablets) {
-    // padding-top: 113px;
     max-width: 355px;
+    padding-top: 156px;
+    margin-left: 240px;
   }
 }
 

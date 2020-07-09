@@ -1,5 +1,6 @@
 .header-container {
   @media screen and (min-width: $tablets) {
+    // position: relative;
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -10,8 +11,8 @@
   @media screen and (max-width: $tablets - 1) {
     position: relative;
     z-index: 20;
-    top: 0;
-    left: 0;
+    // top: 0;
+    // left: 0;
     width: 100%;
     background-color: transparent;
   }
@@ -88,8 +89,9 @@
 
   @media screen and (min-width: $tablets) {
     display: flex;
+    margin-left: auto;
     justify-content: space-between;
-    flex-grow: 1;
+    flex-grow: 0.7;
   }
 
   @media screen and (min-width: $desktop) {
@@ -146,9 +148,14 @@
       margin-bottom: 24px;
     }
   }
+  @media screen and (min-width: $tablets) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
   @media screen and (min-width: $tablets) and (max-width: $desktop - 1) {
-    & .item:not(:last-child) {
+    & .item:not(:first-child) {
       margin-bottom: 20px;
     }
   }
