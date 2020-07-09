@@ -1,9 +1,0 @@
-@mixin centeredFlex($type: flex) {
-  display: $type;
-  align-items: center;
-  justify-content: center;
-}
-
-@mixin outline($type: tomato) {
-  outline: 1px solid $type;
-}
