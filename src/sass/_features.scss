@@ -1,24 +1,118 @@
-.feature-list {
-  width: calc((100% - 62px) / 2);
-}
 .feature {
   padding-top: 84px;
   padding-bottom: 84px;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  @media screen and (min-width: $desktop) {
+    &-text {
+      margin-left: 130px;
+    }
+  }
+}
+
+.hr {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: $primary-color-text;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: $primary-color-text;
+}
+
+p {
+  margin-bottom: 44px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+
+  letter-spacing: 0.02em;
+
+  color: $secondary-color-text;
+}
+
+.feature-list {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (min-width: $tablets) {
+    padding-left: 279px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 155px;
+  }
 }
 
 .feature-item {
-  display: flex;
   width: 193px;
-  min-height: 133px;
   padding: 20px 35px;
 
   background-color: $secondary-bg-color;
+
+  @media screen and (min-width: $tablets) {
+    width: 210px;
+  }
 }
 
-.feature-item:nth-child(2n + 1) {
+.feature-item:nth-child(odd) {
   margin-right: 30px;
 }
 
-.feature-item:nth-child(-n + 3) {
+.feature-item:nth-child(odd) {
   margin-bottom: 30px;
+}
+
+.feature-item:nth-child(even) {
+  margin-top: 30px;
+}
+
+.feature-number {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: $primary-color-text;
+
+  & .symbol {
+    margin-left: 2px;
+    text-align: center;
+    vertical-align: super;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.37;
+
+    color: $accent-color;
+  }
+}
+
+.feature-desc {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+
+  color: $primary-color-text;
 }
