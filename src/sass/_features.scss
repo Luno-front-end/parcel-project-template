@@ -50,8 +50,12 @@ p {
 
 .feature-list {
   justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
+
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   @media screen and (min-width: $tablets) {
     padding-left: 279px;
   }
@@ -70,18 +74,29 @@ p {
   @media screen and (min-width: $tablets) {
     width: 210px;
   }
+
+  @media screen and (min-width: $desktop) {
+    width: 170px;
+  }
+}
+
+.feature-item:not(:last-child) {
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 30px;
+  }
 }
 
 .feature-item:nth-child(odd) {
-  margin-right: 30px;
-}
-
-.feature-item:nth-child(odd) {
-  margin-bottom: 30px;
+  @media screen and (min-width: $mobile) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .feature-item:nth-child(even) {
-  margin-top: 30px;
+  @media screen and (min-width: $mobile) {
+    margin-top: 30px;
+  }
 }
 
 .feature-number {
