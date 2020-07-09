@@ -1,0 +1,196 @@
+.default-section-service{
+    background-color: $service-color;
+    background-image: url(../images/services-and-price/mobile/small-size/background-image-services-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx){
+        background-image: url(../images/services-and-price/mobile/small-size/background-image-services-mobile@2x.png);
+    }
+    @media (min-resolution: 3dppx){
+        background-image: url(../images/services-and-price/mobile/small-size/background-image-services-mobile@3x.png);
+    }
+
+    @media screen and (min-width: 480px) {
+        background-image: url(../images/services-and-price/tablet/small-size/background-image-services-tablet.png);
+        @media (min-resolution: 2dppx){
+            background-image: url(../images/services-and-price/tablet/small-size/background-image-services-tablet@2x.png);
+        }
+        @media (min-resolution: 3dppx){
+            background-image: url(../../images/services-and-price/tablet/small-size/background-image-services-tablet@3x.png);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/services-and-price/pc/small-size/background-image-services-pc.png);
+        @media (min-resolution: 2dppx){
+            background-image: url(../images/services-and-price/pc/small-size/background-image-services-pc@2x.png);
+        }
+        @media (min-resolution: 3dppx){
+            background-image: url(../images/services-and-price/pc/small-size/background-image-services-pc@3x.png);
+        }
+    }
+}
+
+.section-service-price{
+    padding-top: 84px;
+    padding-bottom: 84px;
+    background-image: url(../images/other/img.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.description{
+    position: relative;
+    padding-left: 80px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: $color-rgba;
+
+    &::before{
+        content:"";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 60px;
+        height: 1px;
+        background: $primary-color-text;
+      }
+}
+
+.definition{
+    margin-bottom: 44px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+
+    color: $primary-white-color;
+}
+
+.table-service{
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 767px) {
+        padding: 30px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding: 30px 40px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        background-image: linear-gradient(180deg, $primal-gradient-color 0%, $seconfary-gradient-color 100%);
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        // padding: 40px;
+    }
+}
+
+.scroll{
+    @media screen and (min-width: 1200px) {
+        width: 585px;
+        padding: 30px 40px;
+
+        &.first{
+            background-image: linear-gradient(180deg, $primal-gradient-color 0%, $seconfary-gradient-color 100%);
+        }
+    
+        &.second{
+            background-image: linear-gradient(180deg, $third-gradient-color 0%, $four-gradient-color 100%);
+        }
+    }
+
+    &.second > .scroll-item:last-child{
+        margin-bottom: 0px;
+    }
+
+    &-item{
+        display: flex;
+        // justify-content: space-between;
+        margin-bottom: 20px;
+        // @media screen and (min-width: 1200px) {
+        //     display: flex;
+        // }
+
+        @media screen and (min-width: 1200px) {
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    &-border{
+        margin-right: 6px;
+        border-bottom: 1px solid rgba(157, 164, 189, 0.12);
+        // min-width: calc((100% - 6px) / 2);
+        width: 100%;
+    }
+}
+
+
+.service{
+    margin-right: 6px;
+    white-space: nowrap;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2.14;
+    letter-spacing: 0.02em;
+
+    color: $additional-color-text;
+}
+
+.price{
+    white-space: nowrap;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2.14;
+    letter-spacing: 0.02em;
+
+    color: $additional-color-text;
+
+}
+
+.online-record{
+    display: flex;
+    margin: auto;
+    width: 168px;
+
+    border: 1px solid $accent-color;
+    border-radius: 25px;
+    padding: 12px 20px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    color: $primary-white-color;
+
+    transition: background-color 250ms $transition;
+
+    &:hover,:focus{
+        background-color: $accent-color;
+    }
+}
