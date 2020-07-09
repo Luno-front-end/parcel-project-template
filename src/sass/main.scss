@@ -1,3 +1,12 @@
+@import './base/normalize';
 @import './utils/variables';
-@import './components/base';
+@import './base/base';
 @import './components/ourmasters';
+@import './about-us';
+
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+
+// Стили для файла с примером HTML-фрагмента
