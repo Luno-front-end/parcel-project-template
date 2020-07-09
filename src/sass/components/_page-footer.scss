@@ -1,0 +1,128 @@
+// .page-footer {
+// 	background-color: #191c26;
+// }
+
+.section {
+	padding-top: 84px;
+	padding-bottom: 84px;
+}
+
+.footer-entry {
+	// margin-left: auto;
+	// margin-right: auto;
+	padding-top: 84px;
+	padding-bottom: 84px;
+	background-color: #191c26;
+}
+
+.entry-title {
+	display: block;
+	margin-bottom: 44px;
+	// margin-left: auto;
+	// margin-right: auto;
+
+	font-family: Raleway;
+	// font-style: normal;
+	font-size: 42px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.05em;
+
+	color: $primary-white-color;
+}
+
+.entry-field {
+	display: block;
+	position: relative;
+
+	margin-bottom: 44px;
+}
+
+.entry-input {
+	margin: 0;
+	padding: 0 0 8px 0;
+
+	width: 100%;
+	height: 15px;
+
+	background-color: #191c26;
+
+	border-top: transparent;
+	border-right: transparent;
+	border-left: transparent;
+	border-bottom: 1px solid;
+	border-bottom-color: rgba(157, 164, 189, 0.4);
+
+	&:focus {
+		border-bottom-color: $primary-white-color;
+	}
+}
+
+.entry-label {
+	position: absolute;
+	top: 50%;
+	left: 0;
+
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.36;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: rgba(157, 164, 189, 0.4);
+
+	transform: translateY(-50%);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	.entry-input:focus + &,
+	.entry-input:not(:placeholder-shown) + & {
+		color: $primary-white-color;
+		transform: translateY(-30px);
+	}
+}
+
+.entry-comment {
+	width: 100%;
+	padding: 0 0 60px 0;
+
+	background-color: #191c26;
+
+	border-top: transparent;
+	border-right: transparent;
+	border-left: transparent;
+	border-bottom: 1px solid;
+	border-bottom-color: rgba(157, 164, 189, 0.4);
+
+	&:focus {
+		border-bottom-color: $primary-white-color;
+	}
+}
+
+.comment-label {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.36;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: rgba(157, 164, 189, 0.4);
+
+	transform: translateY(-50%);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	.entry-comment:focus + &,
+	.entry-comment:not(:placeholder-shown) + & {
+		color: $primary-white-color;
+		transform: translateY(-20px);
+	}
+}
+
+.entry-btn {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+	color: $primary-white-color;
+}
