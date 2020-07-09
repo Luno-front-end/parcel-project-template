@@ -88,7 +88,6 @@ img {
 
 .hr-header {
   @media screen and (min-width: $tablets) {
-    display: flex;
     align-items: center;
     &::before {
       content: '';
