@@ -4,7 +4,19 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './variables';
+
+@import './base/normalize';
+@import './utils/variables';
+@import './base/base';
+@import './about-us';
+
 @import './photo-content';
 @import './modal';
 @import './pop-up';
+
+
+
+
+
+
+
