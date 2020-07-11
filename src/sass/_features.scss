@@ -89,7 +89,7 @@ p {
 }
 
 .feature-item:not(:last-child) {
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: 479px) {
     margin-bottom: 30px;
   }
 }
