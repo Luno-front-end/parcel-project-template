@@ -491,17 +491,32 @@ img {
   }
 }
 
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+@media screen and (max-width: 479px) {
+  .content-section {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
 }
 
-body {
-  color: #303030;
-  background-color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.02em;
+@media screen and (min-width: 480px) {
+  .content-section {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .content-section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
 
 .photo {
@@ -512,12 +527,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.standart-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .paragraph {
@@ -545,7 +554,7 @@ body {
 .content-img {
   display: block;
   width: 100%;
-  height: 360px;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -805,7 +814,7 @@ textarea:focus, textarea:hover {
 
 @media screen and (max-width: 479px) {
   .modal-pop {
-    width: 95%;
+    width: 94%;
   }
 }
 
