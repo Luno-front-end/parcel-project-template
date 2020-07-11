@@ -4,11 +4,13 @@ body {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.02em;
 }
+
 .container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
   @media screen and (min-width: $mobile) {
     width: $mobile;
   }
@@ -52,7 +54,9 @@ img {
     padding: 12px 20px;
   }
 
-  // transition: $transition;
+
+  transition: $transition;
+
 
   &:hover,
   &:focus {
@@ -60,16 +64,9 @@ img {
     color: $primary-white-color;
   }
 }
-
 .hr {
-  display: flex;
+    display: flex;
   align-items: center;
-}
-.hr-two {
-  display: flex;
-  align-items: center;
-}
-.hr {
   &::before {
     content: '';
     display: block;
@@ -89,3 +86,4 @@ img {
     margin-right: 20px;
   }
 }
+
