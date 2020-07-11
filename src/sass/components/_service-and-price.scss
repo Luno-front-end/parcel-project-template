@@ -56,6 +56,16 @@ a{
     // background-repeat: no-repeat;
     // background-position: center;
     // background-size: cover;
+
+    @media screen and (min-width: $tablets) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
 }
 
 .description{
@@ -180,7 +190,7 @@ a{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 2.1;
     letter-spacing: 0.02em;
 
     color: $additional-color-text;
@@ -191,6 +201,7 @@ a{
     }
     @media screen and (min-width: $tablets) {
         font-size: 18px;
+        line-height: 1.7;
     }
 
 }
@@ -201,7 +212,7 @@ a{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 2.2;
     letter-spacing: 0.02em;
 
     color: $additional-color-text;
@@ -213,6 +224,7 @@ a{
 
     @media screen and (min-width: $tablets) {
         font-size: 18px;
+        line-height: 1.7;
     }
 }
 
