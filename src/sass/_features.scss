@@ -20,10 +20,14 @@
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36px;
-  letter-spacing: 0.1em;
+  // letter-spacing: 0.1em;
   text-transform: uppercase;
 
   color: $primary-color-text;
+
+  @media screen and (min-width: $mobile) {
+    letter-spacing: 0.1em;
+  }
 }
 
 h2 {
