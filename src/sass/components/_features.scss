@@ -12,6 +12,8 @@
   @media screen and (min-width: $desktop) {
     display: flex;
     flex-direction: row-reverse;
+    padding-top: 130px;
+    padding-bottom: 130px;
   }
 }
 
@@ -23,8 +25,8 @@
   @media screen and (min-width: $desktop) {
     margin-left: 130px;
     padding-right: 125px;
-    padding-top: 130px;
-    padding-bottom: 209px;
+    // padding-top: 130px;
+    // padding-bottom: 209px;
   }
 }
 
@@ -82,8 +84,8 @@
 
   @media screen and (min-width: $desktop) {
     padding-left: 155px;
-    padding-top: 121px;
-    padding-bottom: 130px;
+    // padding-top: 121px;
+    // padding-bottom: 130px;
   }
 }
 
