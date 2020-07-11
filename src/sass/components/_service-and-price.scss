@@ -56,6 +56,16 @@ a{
     // background-repeat: no-repeat;
     // background-position: center;
     // background-size: cover;
+
+    @media screen and (min-width: $tablets) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
 }
 
 .description{
@@ -101,7 +111,6 @@ a{
     // @media screen and (max-width: 374px) {
     //     padding: 15px;
     // }
-
 
     @media screen and (max-width: $tablets-min) {
         padding: 30px;
@@ -157,21 +166,20 @@ a{
 
     &-border{
         display: block;
-        margin-bottom: 7px;
+        margin-bottom: 5px;
         margin-right: 6px;
         border-bottom: 1px solid $border-service-section-color;
-        width: calc((100% - 6px) / 2);
+        // width: calc((100% - 6px) / 2);
         width: 100%;
 
         @media screen and (max-width: 373px) {
             width: 35%;
         }
         @media screen and (min-width: $tablets) {
-            margin-bottom: 10px;
+            margin-bottom: 6px;
         }
     }
 }
-
 
 .service{
     display: block;
@@ -181,7 +189,7 @@ a{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 2.14;
+    line-height: 2.1;
     letter-spacing: 0.02em;
 
     color: $additional-color-text;
@@ -192,8 +200,8 @@ a{
     }
     @media screen and (min-width: $tablets) {
         font-size: 18px;
+        line-height: 1.7;
     }
-
 }
 
 .price{
@@ -202,7 +210,7 @@ a{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 2.14;
+    line-height: 2.2;
     letter-spacing: 0.02em;
 
     color: $additional-color-text;
@@ -214,8 +222,8 @@ a{
 
     @media screen and (min-width: $tablets) {
         font-size: 18px;
+        line-height: 1.7;
     }
-
 }
 
 .online-record{
