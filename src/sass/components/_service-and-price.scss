@@ -217,7 +217,7 @@ a{
     
     @media screen and (max-width: 373px){
         display: flex;
-        align-items: flex-end;;
+        align-items: flex-end;
     }
 
     @media screen and (min-width: $tablets) {
@@ -226,10 +226,12 @@ a{
     }
 }
 
+.subscribe-link{
+    text-align: center;
+}
+
 .online-record{
-    display: flex;
-    margin: auto;
-    width: 168px;
+    display: inline-block;
 
     border: 1px solid $accent-color;
     border-radius: 25px;
