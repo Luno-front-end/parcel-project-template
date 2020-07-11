@@ -28,28 +28,27 @@
   @media screen and (min-width: $mobile) {
     letter-spacing: 0.1em;
   }
+}
 
-  h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 42px;
-    line-height: 1.16;
-    letter-spacing: 0.05em;
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
 
-    color: $primary-color-text;
-  }
+  color: $primary-color-text;
+}
+.par-features {
+  margin-bottom: 44px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
 
-  p {
-    margin-bottom: 44px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.67;
+  letter-spacing: 0.02em;
 
-    letter-spacing: 0.02em;
-
-    color: $secondary-color-text;
-  }
+  color: $secondary-color-text;
 }
 
 .feature-list {
