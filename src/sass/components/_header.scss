@@ -1,6 +1,11 @@
 .header-container {
   @media screen and (min-width: $tablets) {
-    width: 768px;
+    width: $tablets;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
     margin-left: auto;
     margin-right: auto;
   }
@@ -27,6 +32,10 @@
   }
 
   @media screen and (min-width: $tablets) {
+    justify-content: space-between;
+  }
+  @media screen and (min-width: $desktop) {
+    justify-content: space-between;
     align-items: center;
   }
 }
@@ -86,14 +95,18 @@
     }
   }
 
-  @media screen and (min-width: $tablets) {
+  @media screen and (min-width: $tablets) and (max-width: $desktop - 1) {
     display: flex;
-    margin-left: auto;
+
     justify-content: space-between;
-    flex-grow: 0.7;
+    flex-grow: 0.4;
   }
 
   @media screen and (min-width: $desktop) {
+    display: flex;
+
+    justify-content: space-between;
+    flex-grow: 0.8;
   }
 }
 
@@ -147,19 +160,22 @@
       margin-bottom: 24px;
     }
   }
-  @media screen and (min-width: $tablets) {
+  // @media screen and (min-width: $tablets) {
+
+  // }
+
+  @media screen and (min-width: $tablets) and (max-width: $desktop - 1) {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-  }
-
-  @media screen and (min-width: $tablets) and (max-width: $desktop - 1) {
     & .item:not(:first-child) {
       margin-bottom: 20px;
     }
   }
 
   @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
     & .item:not(:last-child) {
       margin-right: 40px;
     }
@@ -219,7 +235,7 @@
 
   @media screen and (min-width: $tablets) {
     position: absolute;
-    left: -110px;
+    left: -80px;
     bottom: 205px;
     transform: rotate(-90deg);
     display: flex;
