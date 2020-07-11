@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/slider.js"],"names":["autoplay","autoplaySpeed","arrows","folse"],"mappings":"AAAAA,QAAQ,EAAE;;AACVC,aAAa,EAAE;;AACfC,MAAM,EAAEC,KAAK","file":"slider.d16eec5e.js","sourceRoot":"..\\src","sourcesContent":["autoplay: true;\r\nautoplaySpeed: 2000;\r\narrows: folse;\r\n"]}
