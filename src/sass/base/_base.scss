@@ -53,7 +53,7 @@ img {
     color: $primary-white-color;
   }
 
-  transition: $transition;
+  // transition: $transition;
 
   &:hover,
   &:focus {
@@ -61,9 +61,11 @@ img {
     color: $primary-white-color;
   }
 }
+
 .hr {
   display: flex;
   align-items: center;
+
   &::before {
     content: '';
     display: block;
