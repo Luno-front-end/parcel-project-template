@@ -4,11 +4,13 @@ body {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.02em;
 }
+
 .container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
   @media screen and (min-width: $mobile) {
     width: $mobile;
   }
@@ -53,7 +55,7 @@ img {
     color: $primary-white-color;
   }
 
-  // transition: $transition;
+  transition: $transition;
 
   &:hover,
   &:focus {
@@ -65,7 +67,6 @@ img {
 .hr {
   display: flex;
   align-items: center;
-
   &::before {
     content: '';
     display: block;
