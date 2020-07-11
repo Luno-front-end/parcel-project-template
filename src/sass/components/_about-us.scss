@@ -1,0 +1,130 @@
+.about-us {
+  position: relative;
+  display: flex;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background: $primary-white-color;
+  font-family: Open Sans;
+  font-style: normal;
+  @media screen and (min-width: $tablets) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+
+  h3 {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-left: 80px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $primary-color-text;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 60px;
+      height: 1px;
+      background: $primary-color-text;
+    }
+  }
+  h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    color: $primary-color-text;
+  }
+  b {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.02em;
+    color: $secondary-color-text;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: $secondary-color-text;
+  }
+  a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: $primary-color-text;
+    border: 1px solid $accent-color;
+    box-sizing: border-box;
+    border-radius: 25px;
+    transition: $transition;
+    &:hover {
+      color: $primary-white-color;
+      background: $accent-color;
+    }
+    &:focus {
+      color: $primary-white-color;
+      background: $accent-color;
+    }
+  }
+}
+.photo-style {
+  margin-right: 30px;
+  @media screen and (max-width: $tablets-min) {
+    display: none;
+  }
+  @media screen and (min-width: $tablets) {
+    width: 50%;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 64px;
+  }
+  .first-img {
+    @media screen and (min-width: $tablets) {
+      float: right;
+    }
+
+    @media screen and (max-width: $desktop) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+    }
+  }
+  .second-img {
+    @media screen and (min-width: $tablets) {
+      float: right;
+    }
+  }
+}
+.about-text {
+  @media screen and (min-width: $tablets) {
+    max-width: 500px;
+    width: 50%;
+  }
+}
