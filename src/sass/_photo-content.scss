@@ -1,28 +1,29 @@
-html {
-  box-sizing: border-box;
-}
-
-body {
-    color: $primary-color-text;
-    background-color: $primary-white-color;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.02em; 
+.content-section {
+  @media screen and (max-width: $mobile-min) {
+    padding-top: 84px;
+    padding-bottom: 84px;
   }
 
+  @media screen and (min-width: $mobile) {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
   
+  @media screen and (min-width: $tablets) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 
+  @media screen and (min-width: $desktop) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
   .photo {
     position: relative;
 
     display: inline-flex;
     justify-content: center;
-  }
-
-  .standart-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
   }
 
   .paragraph {
@@ -53,7 +54,7 @@ body {
   .content-img {
     display: block;
     width: 100%;
-    height: 360px;
+    height: auto;
   }
 
   .photo-content {
