@@ -371,6 +371,11 @@
 		letter-spacing: 0.2em;
 
 		color: $primary-color-text;
+
+		&:hover,
+		&:focus {
+			color: $accent-color;
+		}
 	}
 }
 
