@@ -54,7 +54,9 @@ img {
     padding: 12px 20px;
   }
 
+
   transition: $transition;
+
 
   &:hover,
   &:focus {
@@ -62,3 +64,26 @@ img {
     color: $primary-white-color;
   }
 }
+.hr {
+    display: flex;
+  align-items: center;
+  &::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: $primary-color-text;
+    margin-right: 20px;
+  }
+}
+.hr-two {
+  &::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: $additional-color-text;
+    margin-right: 20px;
+  }
+}
+

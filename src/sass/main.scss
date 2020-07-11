@@ -1,12 +1,9 @@
 @import "./base/normalize";
 @import "./utils/variables";
 @import "./base/base";
+@import './components/about-us';
 @import "./components/service-and-price";
-
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-
-// Стили для файла с примером HTML-фрагмента
-
+@import './features';
+@import './photo-content';
+@import './modal';
+@import './pop-up';
