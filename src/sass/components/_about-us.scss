@@ -1,4 +1,4 @@
-.about-us{
+.about-us {
   position: relative;
   display: flex;
   padding-top: 84px;
@@ -6,7 +6,16 @@
   background: $primary-white-color;
   font-family: Open Sans;
   font-style: normal;
-  h3{
+  @media screen and (min-width: $tablets) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+
+  h3 {
     position: relative;
     margin-top: 0;
     margin-bottom: 20px;
@@ -17,8 +26,8 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: $primary-color-text;
-    &::before{
-      content:"";
+    &::before {
+      content: '';
       position: absolute;
       left: 0;
       top: 50%;
@@ -27,7 +36,7 @@
       background: $primary-color-text;
     }
   }
-  h2{
+  h2 {
     margin-top: 0;
     margin-bottom: 20px;
     font-family: Raleway;
@@ -38,7 +47,7 @@
     letter-spacing: 0.05em;
     color: $primary-color-text;
   }
-  b{
+  b {
     display: inline-block;
     margin-top: 0;
     margin-bottom: 20px;
@@ -48,7 +57,7 @@
     letter-spacing: 0.02em;
     color: $secondary-color-text;
   }
-  p{
+  p {
     margin-top: 0;
     margin-bottom: 40px;
     font-weight: normal;
@@ -57,7 +66,7 @@
     letter-spacing: 0.02em;
     color: $secondary-color-text;
   }
-  a{
+  a {
     text-decoration: none;
     display: inline-block;
     padding: 12px 20px;
@@ -71,45 +80,51 @@
     box-sizing: border-box;
     border-radius: 25px;
     transition: $transition;
-    &:hover{
+    &:hover {
       color: $primary-white-color;
       background: $accent-color;
     }
-    &:focus{
+    &:focus {
       color: $primary-white-color;
       background: $accent-color;
     }
   }
 }
-.photo-style{
+.photo-style {
   margin-right: 30px;
-@media screen and (max-width: 767px) {
-  display: none}
-@media screen and (min-width: 768px) {
-  width: 50%;}
-@media screen and (min-width: 1200px) {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 64px
-}
-  .first-img{
-    @media screen and (min-width: 768px) {
-      float: right}
-    
-    @media screen and (max-width: 1200px) {
-      margin-bottom: 30px}
-    
-    @media screen and (min-width: 1200px) {
+  @media screen and (max-width: $tablets-min) {
+    display: none;
+  }
+  @media screen and (min-width: $tablets) {
+    width: 50%;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 64px;
+  }
+  .first-img {
+    @media screen and (min-width: $tablets) {
+      float: right;
+    }
+
+    @media screen and (max-width: $desktop) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
       margin-right: 30px;
-      }
+    }
   }
-  .second-img{
-    @media screen and (min-width: 768px) {
-      float: right}
+  .second-img {
+    @media screen and (min-width: $tablets) {
+      float: right;
+    }
   }
 }
-.about-text{
-  @media screen and (min-width: 768px) {
-   max-width: 500px;
-  width: 50%}
+.about-text {
+  @media screen and (min-width: $tablets) {
+    max-width: 500px;
+    width: 50%;
+  }
 }
