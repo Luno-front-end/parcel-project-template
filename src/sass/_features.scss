@@ -67,19 +67,19 @@ p {
 }
 
 .feature-item {
-  width: 193px;
-  height: 133px;
+  max-width: 193px;
+  // height: 133px;
   padding: 20px 35px;
 
   background-color: $secondary-bg-color;
 
   @media screen and (min-width: $tablets) {
-    width: 210px;
+    max-width: 210px;
     padding: 20px 44px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 170px;
+    max-width: 170px;
     padding: 20px;
   }
 }
