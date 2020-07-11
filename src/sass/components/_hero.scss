@@ -1,15 +1,7 @@
 // .hero {
 
 // }
-// .test {
-//   @media screen and (min-width: $tablets) {
-//     width: 609px;
-//     height: 680px;
 
-//     background-color: rgba(47, 48, 58, 0.8);
-//     background-position: right;
-//   }
-// }
 .overlay {
   @media screen and (max-width: $tablets - 1) {
     max-width: 480px;
@@ -17,7 +9,6 @@
     margin-left: auto;
     margin-right: auto;
     background-image: url('../images/header/hiro-mob.jpg');
-    background-color: rgba(47, 48, 58, 0.8);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -34,37 +25,37 @@
   }
   @media screen and (min-width: $tablets) {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 40px;
 
     background: url('../images/header/hiro-tab.jpg'),
       linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
 
-    // width: 609px;
     height: 680px;
-    // background: linear-gradient(
-    //   rgba(47, 48, 58, 0.8),
-    //   url('../images/header/hiro-tab.jpg')
-    // );
-    // background-color: ;
-    // background: url('../images/header/hiro-tab.jpg');
     background-size: 609px 680px;
 
     background-position: right;
     background-repeat: no-repeat;
 
-    // @media screen and (min-device-pixel-ratio: 2),
-    //   screen and (min-resolution: 192dpi),
-    //   screen and (min-resolution: 2dppx) {
-    //   background-image: url('../images/hiro-tab@2x.jpg');
-    // }
-    // @media screen and (min-device-pixel-ratio: 3),
-    //   screen and (min-resolution: 288dpi),
-    //   screen and (min-resolution: 3dppx) {
-    //   background-image: url('../images/hiro-tab@3x.jpg');
-    // }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/header/hiro-tab@2x.jpg');
+    }
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url('../images/header/hiro-tab@3x.jpg');
+    }
   }
 }
 
 .slider-current {
+  @media screen and (max-width: $tablets - 1) {
+    display: none;
+  }
   fill: $primary-white-color;
   margin-bottom: 12px;
 }
@@ -72,6 +63,9 @@
   fill: $additional-color-text;
   &:not(:last-child) {
     margin-bottom: 12px;
+  }
+  @media screen and (max-width: $tablets - 1) {
+    display: none;
   }
 }
 
@@ -116,20 +110,91 @@
     max-width: 306px;
   }
   @media screen and (min-width: $tablets) {
-    max-width: 355px;
-    padding-top: 156px;
-    margin-left: auto;
-    display: flex;
+    width: 450px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+.hero {
+  & .container {
+    @media screen and (min-width: $tablets) {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 }
 
 .slider-container {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
+  margin-left: 77px;
+  align-items: flex-end;
 }
 .heading-container {
   @media screen and (min-width: $tablets) {
-    margin-right: 77px;
+    // margin-right: 77px;
+  }
+}
+.controls {
+  @media screen and (max-width: $tablets - 1) {
+    display: none;
+  }
+  display: flex;
+  align-content: flex-end;
+
+  justify-content: flex-end;
+}
+.prev {
+  display: flex;
+  padding: 0;
+  min-width: 60px;
+  height: 24px;
+  background-color: transparent;
+
+  color: $color-rgba;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.1em;
+  margin-right: 26px;
+  border: none;
+  border-bottom: 1px solid $color-rgba;
+  outline: none;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    border-color: $primary-white-color;
+  }
+}
+
+.next {
+  display: flex;
+  justify-content: flex-end;
+
+  padding: 0;
+  min-width: 60px;
+  height: 24px;
+  background-color: transparent;
+
+  color: $color-rgba;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.1em;
+  border: none;
+  border-bottom: 1px solid $color-rgba;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    border-color: $primary-white-color;
   }
 }
 
