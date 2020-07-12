@@ -1,23 +1,19 @@
-// .page-footer {
-// 	background-color: #191c26;
-// }
-
-.section {
-	padding-top: 84px;
-	padding-bottom: 84px;
+.page-footer-default {
+	background-color: #191c26;
 }
+
+// Online-subscribe
 
 .footer-entry {
 	padding-top: 84px;
 	padding-bottom: 84px;
-	background-color: #191c26;
 
 	@media screen and (min-width: 768px) {
 		padding-top: 100px;
 		padding-bottom: 100px;
 	}
 
-	@media screen and (min-width: 1280px) {
+	@media screen and (min-width: 1200px) {
 		padding-top: 130px;
 	}
 }
@@ -66,7 +62,7 @@
 	padding: 0 0 8px 0;
 
 	width: 100%;
-	height: 15px;
+	height: 24px;
 
 	color: $primary-white-color;
 	background-color: #191c26;
@@ -77,8 +73,11 @@
 	border-bottom: 1px solid;
 	border-bottom-color: rgba(157, 164, 189, 0.4);
 
+	transition: border-bottom-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
 	&:focus {
-		border-bottom-color: $primary-white-color;
+		border-bottom-color: $accent-color;
 	}
 }
 
@@ -95,13 +94,17 @@
 	color: rgba(157, 164, 189, 0.4);
 
 	transform: translateY(-50%);
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	.entry-input:hover ~ & {
+		color: #ffffff;
+	}
 
 	.entry-input:focus + &,
 	.entry-input:not(:placeholder-shown) + & {
 		font-size: 14px;
 		color: $accent-color;
-		transform: translateY(-30px);
+		transform: translateY(-32px);
 	}
 }
 
@@ -118,6 +121,8 @@
 	border-left: transparent;
 	border-bottom: 1px solid;
 	border-bottom-color: rgba(157, 164, 189, 0.4);
+
+	transition: border-bottom-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 	&:focus {
 		border-bottom-color: $accent-color;
@@ -137,7 +142,11 @@
 	color: rgba(157, 164, 189, 0.4);
 
 	transform: translateY(-50%);
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	.entry-comment:hover ~ & {
+		color: #ffffff;
+	}
 
 	.entry-comment:focus + &,
 	.entry-comment:not(:placeholder-shown) + & {
@@ -159,13 +168,13 @@
 	}
 }
 
-// contacts sec
+// Contacts
 
 .footer-contacts {
 	padding-top: 84px;
 	padding-bottom: 84px;
 
-	background-color: #191c26;
+	// background-color: #191c26;
 	background-image: url('../images/page-footer/mobile/bg480M.png');
 	background-position: center;
 	background-size: cover;
@@ -178,7 +187,7 @@
 		background-image: url('../images/page-footer/mobile/bg1440M@3x.png');
 	}
 
-	@media screen and (min-width: 768px) and (max-width: 1279px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		padding-top: 100px;
 		padding-bottom: 100px;
 
@@ -203,7 +212,7 @@
 		}
 	}
 
-	@media screen and (min-width: 1280px) {
+	@media screen and (min-width: 1200px) {
 		padding-top: 130px;
 		padding-bottom: 130px;
 		padding-left: 100px;
@@ -221,7 +230,7 @@
 }
 
 // desktop styles
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
 	.desktop {
 		display: flex;
 	}
@@ -256,7 +265,7 @@
 	color: $additional-color-text;
 
 	.contacts-link {
-		display: flex;
+		display: inline-flex;
 		align-items: center;
 
 		color: inherit;
@@ -267,15 +276,33 @@
 			color: $accent-color;
 		}
 
+		&:hover .contacts-icon,
+		&:focus .contacts-icon {
+			background-color: $accent-color;
+		}
+
 		.contacts-icon {
 			margin-right: 16px;
 
-			fill: currentColor;
-			transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+			display: inline-flex;
+			width: 24px;
+			height: 24px;
+
+			background-color: rgb(42%, 40%, 40%, 0.6);
+			border-radius: 30%;
+			border: 1px solid #ffffff81;
+
+			transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+			&:hover,
+			&:focus {
+				background-color: $accent-color;
+			}
 
 			.contacts-link:hover &,
 			.contacts-link:focus & {
-				fill: $accent-color;
+				background-color: $accent-color;
+				border-radius: 50%;
 			}
 		}
 	}
@@ -321,11 +348,7 @@
 
 // Socials sec
 
-.footer-socials {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
+.footer-socials-default {
 	padding-top: 44px;
 	padding-bottom: 79px;
 
@@ -335,6 +358,12 @@
 		padding-top: 56px;
 		padding-bottom: 56px;
 	}
+}
+
+.footer-socials {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .copy {
@@ -372,6 +401,8 @@
 		letter-spacing: 0.2em;
 
 		color: $primary-color-text;
+
+		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 		&:hover,
 		&:focus {
