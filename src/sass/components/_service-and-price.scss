@@ -157,6 +157,10 @@ a{
         //     display: flex;
         // }
 
+        @media screen and (max-width: 373px) {
+            align-items: center;
+        }
+
         @media screen and (min-width: 1200px) {
             &:last-child{
                 margin-bottom: 0px;
@@ -165,16 +169,19 @@ a{
     }
 
     &-border{
-        display: block;
-        margin-bottom: 5px;
+        display: flex;
+        margin-bottom: 8px;
         margin-right: 6px;
         border-bottom: 1px solid $border-service-section-color;
         // width: calc((100% - 6px) / 2);
         width: 100%;
 
-        @media screen and (max-width: 373px) {
-            width: 35%;
+        @media screen and (max-width: 373px){
+            // display: flex;
+            align-items: center;
+            margin-bottom: 0px;
         }
+        
         @media screen and (min-width: $tablets) {
             margin-bottom: 6px;
         }
@@ -194,7 +201,12 @@ a{
 
     color: $additional-color-text;
     @media screen and (max-width: 372px) {
+        
         white-space: unset;
+        display: flex;
+        text-align: center;
+        // max-width: 50%;
+        // justify-content: center;
         // overflow: hidden;
         // text-overflow: ellipsis;
     }
@@ -217,7 +229,7 @@ a{
     
     @media screen and (max-width: 373px){
         display: flex;
-        align-items: flex-end;
+        align-items: center;
     }
 
     @media screen and (min-width: $tablets) {
