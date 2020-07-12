@@ -106,6 +106,10 @@
   align-items: center;
   margin-right: 10px;
   margin-bottom: 64px;
+  &:hover .icon,
+  &:hover .icon {
+    fill: $accent-color;
+  }
 }
 
 .icon {
@@ -113,8 +117,4 @@
   height: 20px;
   fill: $primary-color-text;
   transition: $transition;
-  &:hover,
-  &:focus {
-    fill: $accent-color;
-  }
 }
