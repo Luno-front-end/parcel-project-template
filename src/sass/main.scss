@@ -1,24 +1,14 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-
-// Стили для файла с примером HTML-фрагмента
-
 @import './base/normalize';
 @import './utils/variables';
 @import './base/base';
-@import './about-us';
-
-
-
+@import './components/header';
+@import './components/hero';
+@import './components/logo';
+@import './components/about-us';
+@import './components/service-and-price';
+@import './components/features';
+@import './components/ourmasters';
 @import './photo-content';
 @import './modal';
 @import './pop-up';
-
-
-
-
-
-
-
+@import './components/page-footer';
