@@ -1,17 +1,16 @@
-p, h2, ul, li{
-    margin: 0;
-    padding: 0;
-    display: block;
+// p, h2, ul, li{
+//     margin: 0;
+//     padding: 0;
+//     display: block;
+// }
 
-}
+// li{
+//     list-style-type: none;
+// }
 
-li{
-    list-style-type: none;
-}
-
-a{
-    text-decoration: none;
-}
+// a{
+//     text-decoration: none;
+// }
 
 .default-section-service{
     background-color: $service-color;
@@ -69,6 +68,7 @@ a{
 }
 
 .description{
+    margin: 0;
     position: relative;
     padding-left: 80px;
     margin-bottom: 20px;
@@ -93,6 +93,7 @@ a{
 }
 
 .definition{
+    margin: 0;
     margin-bottom: 44px;
 
     font-family: Raleway;
@@ -189,6 +190,9 @@ a{
 }
 
 .service{
+    margin: 0;
+    padding: 0;
+
     display: block;
     margin-right: 6px;
     white-space: nowrap;
@@ -217,6 +221,7 @@ a{
 }
 
 .price{
+    margin: 0;
     white-space: nowrap;
 
     font-style: normal;
