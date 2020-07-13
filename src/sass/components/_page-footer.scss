@@ -230,9 +230,12 @@
 }
 
 // desktop styles
-@media screen and (min-width: 1200px) {
-	.desktop {
+.desktop {
+	@media screen and (min-width: 1200px) {
 		display: flex;
+		width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
@@ -263,6 +266,10 @@
 	font-size: 18px;
 	line-height: 1.67;
 	color: $additional-color-text;
+
+	@media screen and (max-width: 320px) {
+		font-size: 15px;
+	}
 
 	.contacts-link {
 		display: inline-flex;
@@ -364,6 +371,10 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	@media screen and (max-width: 425px) {
+		flex-direction: column;
+	}
 }
 
 .copy {
@@ -376,6 +387,10 @@
 	letter-spacing: 0.2em;
 
 	color: $additional-color-text;
+
+	@media screen and (max-width: 425px) {
+		margin-bottom: 20px;
+	}
 }
 
 .socials {
