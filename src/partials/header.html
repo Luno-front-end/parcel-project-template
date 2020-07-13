@@ -1,9 +1,14 @@
 <article class="header-container">
   <div class="overlay">
+    <ul class="standart-ul slider-track">
+      <li class="slider-item showing"></li>
+      <li class="slider-item"></li>
+      <li class="slider-item"></li>
+    </ul>
     <header class="header">
       <nav class="container header-menu header-nav">
         <a class="standart-a logo" href="./index.html">
-          <svg class="icon" width="69" height="56">
+          <svg width="69" height="56">
             <use href="./images/sprite.svg#logo"></use>
           </svg>
         </a>
@@ -25,8 +30,8 @@
         </button>
         <div class="menu-container" id="menu-container" data-menu>
           <ul class="site-nav standart-ul">
-            <li class="item">
-              <a class="standart-a" href="#">О нас</a>
+            <li class="item" data-menu-button>
+              <a class="standart-a" href="#" data-menu-button>О нас</a>
             </li>
             <li class="item">
               <a class="standart-a" href="#">Услуги и цены</a>
@@ -100,8 +105,8 @@
       <a href="#active">Назад</a> -->
     </section>
     <div class="controls container">
-      <button class="prev">Назад</button>
-      <button class="next">Вперед</button>
+      <button class="prev" id="prev">Назад</button>
+      <button class="next" id="next">Вперед</button>
     </div>
   </div>
 </article>
