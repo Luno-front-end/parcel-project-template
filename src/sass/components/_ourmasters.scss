@@ -91,8 +91,23 @@
 .socset-list {
   display: flex;
   margin-top: 30px;
-
+  margin-bottom: 64px;
   justify-content: center;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0px;
+  }
+}
+
+.end-ul {
+  margin-bottom: 0px;
+}
+
+.size-li {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .bcg {
@@ -104,8 +119,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
-  margin-bottom: 64px;
+
   &:hover .icon,
   &:hover .icon {
     fill: $accent-color;
