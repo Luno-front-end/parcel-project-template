@@ -1,30 +1,44 @@
 <footer class="page-footer" id="subscribe">
   <!-- <div class="container"> -->
+  <section class="page-footer-default ">
 
-  <section class="page-footer-default desktop">
-    <div class="footer-entry container">
-      <!-- <div class="container"> -->
-      <form class="entry" autocomplete="off">
-        <b class="entry-title">Онлайн-запись</b>
+    <div class="desktop">
+      <div class="footer-entry container">
+        <!-- <div class="container"> -->
+        <form class="entry" autocomplete="off">
+          <b class="entry-title">Онлайн-запись</b>
 
-        <div class="entry-tablet">
-          <label for="" class="entry-field">
-            <input
-              type="text"
-              class="entry-input"
-              name="name"
+          <div class="entry-tablet">
+            <label for="entry-name" class="entry-field">
+              <input
+                id="entry-name"
+                type="text"
+                class="entry-input"
+                name="name"
+                placeholder=" "
+              />
+              <span class="entry-label">Имя*</span>
+            </label>
+
+            <label for="entry-tel" class="entry-field">
+              <input
+                id="entry-tel"
+                type="tel"
+                class="entry-input"
+                name="telephone"
+                placeholder=" "
+              />
+              <span class="entry-label">Телефон*</span>
+            </label>
+          </div>
+
+          <label for="message" class="entry-field">
+            <textarea
+              id="message"
+              name="comment"
+              class="entry-comment"
               placeholder=" "
-            />
-            <span class="entry-label">Имя*</span>
-          </label>
-
-          <label for="" class="entry-field">
-            <input
-              type="tel"
-              class="entry-input"
-              name="telephone"
-              placeholder=" "
-            />
+            ></textarea>
             <span class="entry-label">Телефон*</span>
           </label>
         </div>
