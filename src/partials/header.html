@@ -1,9 +1,14 @@
 <article class="header-container">
   <div class="overlay">
+    <ul class="standart-ul slider-track">
+      <li class="slider-item showing"></li>
+      <li class="slider-item"></li>
+      <li class="slider-item"></li>
+    </ul>
     <header class="header">
       <nav class="container header-menu header-nav">
         <a class="standart-a logo" href="./index.html">
-          <svg class="icon" width="69" height="56">
+          <svg width="69" height="56">
             <use href="./images/sprite.svg#logo"></use>
           </svg>
         </a>
@@ -12,6 +17,7 @@
           class="menu-button"
           aria-expanded="false"
           aria-controls="menu-container"
+          open
           data-menu-button
         >
           <svg
@@ -23,19 +29,19 @@
             <use class="icon-menu" href="./images/sprite.svg#menu"></use>
           </svg>
         </button>
-        <div class="menu-container" id="menu-container" data-menu>
+        <div class="menu-container" id="menu-container" data-menu close>
           <ul class="site-nav standart-ul">
             <li class="item">
-              <a class="standart-a" href="#">О нас</a>
+              <a class="standart-a" href="#about-us " open>О нас</a>
             </li>
             <li class="item">
-              <a class="standart-a" href="#">Услуги и цены</a>
+              <a class="standart-a" href="#service-price" open>Услуги и цены</a>
             </li>
             <li class="item">
-              <a class="standart-a" href="#">Мастера</a>
+              <a class="standart-a" href="#ourmasters" open>Мастера</a>
             </li>
             <li class="item">
-              <a class="standart-a" href="#">Контакты</a>
+              <a class="standart-a" href="#subscribe" open>Контакты</a>
             </li>
           </ul>
           <ul class="standart-ul contact-list">
@@ -45,7 +51,9 @@
               >
             </li>
             <li class="item">
-              <a class="button" href="#">онлайн-запись</a>
+              <button class="button" data-modal-open open>
+                онлайн-запись
+              </button>
             </li>
           </ul>
           <ul class="standart-ul social-link hr-header">
@@ -100,8 +108,8 @@
       <a href="#active">Назад</a> -->
     </section>
     <div class="controls container">
-      <button class="prev">Назад</button>
-      <button class="next">Вперед</button>
+      <button class="prev" id="prev">Назад</button>
+      <button class="next" id="next">Вперед</button>
     </div>
   </div>
 </article>
