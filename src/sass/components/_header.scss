@@ -1,13 +1,16 @@
 .header-container {
+  position: relative;
+  // overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
   @media screen and (min-width: $tablets) {
     width: $tablets;
-    margin-left: auto;
-    margin-right: auto;
   }
   @media screen and (min-width: $desktop) {
     width: $desktop;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -15,8 +18,6 @@
   @media screen and (max-width: $tablets - 1) {
     position: relative;
     z-index: 20;
-    // top: 0;
-    // left: 0;
     width: 100%;
     background-color: transparent;
   }
@@ -268,3 +269,14 @@
   @media screen and (min-width: $desktop) {
   }
 }
+// .open {
+//   @media screen and (max-width: $tablets - 1) {
+//     opacity: 1;
+//   }
+// }
+
+// .close {
+//   @media screen and (max-width: $tablets - 1) {
+//     opacity: 0;
+//   }
+// }

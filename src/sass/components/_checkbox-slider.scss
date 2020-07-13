@@ -1,0 +1,35 @@
+.all input {
+  /*скрывает стандартные инпуты (чекбоксы) на странице*/
+  display: none;
+}
+
+.active {
+  & .check {
+    /*стиль отдельного переключателя*/
+    border-radius: 100px; /*скругление углов*/
+    display: inline-block; /*расположение в строку*/
+    width: 15px;
+    height: 15px;
+    background: #bbb;
+  }
+}
+
+.active {
+  /*расположение блока с переключателями*/
+  margin: 23% 0 0;
+  text-align: center;
+}
+
+.active .check:hover {
+  /*поведение чекбокса при наведении*/
+  background: #76c8ff;
+  border-color: #777 !important; /*выполнение в любом случае*/
+}
+
+/*цвет активного лейбла при активации чекбокса*/
+#switch1:checked ~ .active label:nth-child(1),
+#switch2:checked ~ .active label:nth-child(2),
+#switch3:checked ~ .active label:nth-child(3) {
+  background: #18a3dd;
+  border-color: #18a3dd !important;
+}
