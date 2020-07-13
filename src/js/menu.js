@@ -12,3 +12,14 @@
     mobileMenuRef.classList.toggle('is-open');
   });
 })();
+
+(() => {
+  const menuClose = document.querySelector('[close]');
+  const mobileMenuOp = document.querySelector('[open]');
+
+  menuClose.addEventListener('click', () => {
+    menuClose.classList.toggle('is-open');
+
+    mobileMenuOp.classList.toggle('is-open');
+  });
+})();
