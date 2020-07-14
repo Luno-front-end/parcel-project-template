@@ -31,6 +31,10 @@
 
 	color: $primary-white-color;
 
+	@media screen and (max-width: 425px) {
+		font-size: 32px;
+	}
+
 	@media screen and (min-width: 768px) {
 		text-align: left;
 	}
@@ -250,6 +254,10 @@
 	letter-spacing: 0.05em;
 
 	color: $primary-white-color;
+
+	@media screen and (max-width: 425px) {
+		font-size: 32px;
+	}
 
 	@media screen and (max-width: 767px) {
 		text-align: center;
