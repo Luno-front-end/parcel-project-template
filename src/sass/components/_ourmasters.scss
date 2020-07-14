@@ -2,6 +2,11 @@
   padding-top: 84px;
   padding-bottom: 84px;
   background-color: $secondary-bg-color;
+  & .img-ourmasters {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .line-befor {
