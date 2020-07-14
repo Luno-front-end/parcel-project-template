@@ -24,11 +24,9 @@
 
   & .slider-track {
     position: absolute;
-
     top: 0;
     left: 0;
     z-index: -3;
-    // display: flex;
     @media screen and (max-width: $tablets - 1) {
       max-width: 480px;
       height: 580px;
@@ -44,6 +42,7 @@
       opacity: 0;
       z-index: 1;
       transition: opacity 1s;
+
       &.showing {
         opacity: 1;
         z-index: 2;
@@ -52,6 +51,7 @@
         height: 580px;
         @media screen and (max-width: $tablets - 1) {
           background-image: url('../images/header/hero-mob.jpg');
+          background-color: rgba(47, 48, 58, 0.8);
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
@@ -352,6 +352,7 @@
 
   letter-spacing: 0.1em;
   border: none;
+  outline: none;
   border-bottom: 1px solid $color-rgba;
   transition: $transition;
 

@@ -22,8 +22,8 @@ var slidesP = document.querySelectorAll('.slider-container .slider-line');
 ///////////////////////
 var currentSlide = 0;
 var currentSlideP = 0;
-var slideInterval = setInterval(nextSlide, 2000);
-var slideIntervalP = setInterval(nextSlideP, 2000);
+var slideInterval = setInterval(nextSlide, 4000);
+var slideIntervalP = setInterval(nextSlideP, 4000);
 
 function nextSlide() {
   goToSlide(currentSlide + 1);
