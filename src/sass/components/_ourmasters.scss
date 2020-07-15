@@ -13,7 +13,6 @@
   position: relative;
   margin-top: 0;
   margin-bottom: 20px;
-  padding-left: 80px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -26,15 +25,6 @@
     @media screen and (min-width: $desktop) {
       margin-left: 0px;
     }
-  }
-  &::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 60px;
-    height: 1px;
-    background: $primary-color-text;
   }
 }
 .masters-item {

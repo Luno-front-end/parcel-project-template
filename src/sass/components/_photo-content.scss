@@ -30,24 +30,12 @@
   margin-top: 0;
   margin-bottom: 44px;
   text-transform: uppercase;
-  margin-left: 80px;
 
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.91;
   letter-spacing: 0.1em;
-
-  &::before {
-    content: ' ';
-    width: 60px;
-    height: 1px;
-    background-color: $primary-color-text;
-    position: absolute;
-
-    left: 0;
-    top: 13%;
-  }
 }
 
 .img {
