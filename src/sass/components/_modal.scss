@@ -156,6 +156,8 @@ textarea {
     height: 40px;
     background: $primary-white-color;
 
+    cursor: pointer;
+
     &:hover,
     &:focus {
       color: $primary-white-color;
