@@ -50,6 +50,8 @@ img {
   padding: 12px 37px;
   border-radius: 25px;
   border: 1px solid $accent-color;
+  cursor: pointer;
+
   @media screen and (min-width: $tablets) {
     padding: 12px 20px;
     color: $primary-white-color;
