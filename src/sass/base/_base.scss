@@ -1,16 +1,19 @@
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/raleway-bold.ttf);
+}
+
 body {
   color: $secondary-color-text;
   background-color: $primary-white-color;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.02em;
 }
-
 .container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-
   @media screen and (min-width: $mobile) {
     width: $mobile;
   }
@@ -21,7 +24,6 @@ body {
     width: $desktop;
   }
 }
-
 .standart-a {
   text-decoration: none;
 }
@@ -30,7 +32,6 @@ body {
   padding: 0;
   margin: 0;
 }
-
 img {
   display: block;
   max-width: 100%;
@@ -49,23 +50,20 @@ img {
   padding: 12px 37px;
   border-radius: 25px;
   border: 1px solid $accent-color;
-
   @media screen and (min-width: $tablets) {
     padding: 12px 20px;
+    color: $primary-white-color;
   }
-
-
   transition: $transition;
-
-
   &:hover,
   &:focus {
     background-color: $accent-color;
     color: $primary-white-color;
   }
 }
+
 .hr {
-    display: flex;
+  display: flex;
   align-items: center;
   &::before {
     content: '';
@@ -77,6 +75,8 @@ img {
   }
 }
 .hr-two {
+  display: flex;
+  align-items: center;
   &::before {
     content: '';
     display: block;
@@ -86,4 +86,16 @@ img {
     margin-right: 20px;
   }
 }
-
+.hr-header {
+  @media screen and (min-width: $tablets) {
+    align-items: center;
+    &::before {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 1px;
+      background-color: $primary-color-text;
+      margin-right: 40px;
+    }
+  }
+}

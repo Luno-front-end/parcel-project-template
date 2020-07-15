@@ -1,0 +1,19 @@
+.slider-line {
+  display: block;
+  background-color: #9da4bd;
+  width: 8px;
+  height: 2px;
+  margin-bottom: 12px;
+  &.showing {
+    display: block;
+    background-color: #ffffff;
+    width: 18px;
+    height: 2px;
+    @media screen and (max-width: $tablets - 1) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: $tablets - 1) {
+    display: none;
+  }
+}

@@ -1,0 +1,11 @@
+.logo {
+  fill: $primary-white-color;
+
+  @media screen and (min-width: $tablets) {
+    fill: $primary-color-text;
+    margin-left: 30px;
+  }
+}
+.icon {
+  display: block;
+}

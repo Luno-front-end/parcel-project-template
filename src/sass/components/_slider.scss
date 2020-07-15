@@ -1,0 +1,351 @@
+.overlay {
+  @media screen and (max-width: $tablets - 1) {
+    max-width: 480px;
+    height: 580px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: $tablets) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    height: 730px;
+  }
+  @media screen and (min-width: $desktop) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    height: 680px;
+  }
+
+  & .slider-track {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    @media screen and (max-width: $tablets - 1) {
+      max-width: 480px;
+      height: 580px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    // Слайдер Телефон
+    // Слайдер один
+    & .slider-item {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      z-index: 1;
+      transition: opacity 1s;
+
+      &.showing {
+        opacity: 1;
+        z-index: 2;
+      }
+      &:nth-child(1) {
+        height: 580px;
+        @media screen and (max-width: $tablets - 1) {
+          background-image: url('../images/header/hero-mob.jpg');
+          background-color: rgba(25, 28, 38, 1);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url('../images/header/hero-mob@2x.jpg');
+          }
+          @media screen and (min-device-pixel-ratio: 3),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+            background-image: url('../images/header/hero-mob@3x.jpg');
+          }
+        }
+      }
+      // Слайдер два
+      &:nth-child(2) {
+        height: 580px;
+        @media screen and (max-width: $tablets - 1) {
+          background-image: url('../images/header/mobile_2.jpg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url('../images/header/mobile_2@2x.jpg');
+          }
+          @media screen and (min-device-pixel-ratio: 3),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+            background-image: url('../images/header/mobile_2@3x.jpg');
+          }
+        }
+      }
+      // Слайдер три
+      &:nth-child(3) {
+        height: 580px;
+        @media screen and (max-width: $tablets - 1) {
+          background-image: url('../images/header/mobile_3.jpg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url('../images/header/mobile_3@2x.jpg');
+          }
+          @media screen and (min-device-pixel-ratio: 3),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+            background-image: url('../images/header/mobile_3@3x.jpg');
+          }
+        }
+      }
+      // Слайдер Планшет
+      // Слайдер один
+      &:nth-child(1) {
+        @media screen and (min-width: $tablets) {
+          background: url('../images/header/hero-tab.jpg'),
+            linear-gradient(to right, rgba(25, 28, 38, 1), rgba(25, 28, 38, 1));
+
+          height: 730px;
+          background-size: 609px 730px;
+
+          background-position: right;
+          background-repeat: no-repeat;
+
+          @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url('../images/header/hero-tab@2x.jpg');
+          }
+          @media screen and (min-device-pixel-ratio: 3),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+            background-image: url('../images/header/hero-tab@3x.jpg');
+          }
+        }
+      }
+      // Сдайдер два
+      &:nth-child(2) {
+        @media screen and (min-width: $tablets) {
+          background: url('../images/header/tablet_2.jpg'),
+            linear-gradient(to right, rgba(25, 28, 38, 1), rgba(25, 28, 38, 1));
+
+          height: 730px;
+          background-size: 609px 730px;
+
+          background-position: right;
+          background-repeat: no-repeat;
+
+          @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url('../images/header/tablet_2@2x.jpg');
+          }
+          @media screen and (min-device-pixel-ratio: 3),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+            background-image: url('../images/header/tablet_2@3x.jpg');
+          }
+        }
+      }
+      // Слайдер три
+      &:nth-child(3) {
+        @media screen and (min-width: $tablets) {
+          background: url('../images/header/tablet_3.jpg'),
+            linear-gradient(to right, rgba(25, 28, 38, 1), rgba(25, 28, 38, 1));
+
+          height: 730px;
+          background-size: 609px 730px;
+
+          background-position: right;
+          background-repeat: no-repeat;
+
+          @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url('../images/header/tablet_3@2x.jpg');
+          }
+          @media screen and (min-device-pixel-ratio: 3),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+            background-image: url('../images/header/tablet_3@3x.jpg');
+          }
+        }
+      }
+      //   Слайдер ПК
+      //   Слайдер один
+      &:nth-child(1) {
+        @media screen and (min-width: $desktop) {
+          background: url('../images/header/hero-pc.jpg'),
+            linear-gradient(to right, rgba(25, 28, 38, 1), rgba(25, 28, 38, 1));
+
+          height: 680px;
+          background-size: 1045px 680px;
+
+          background-position: right;
+          background-repeat: no-repeat;
+
+          @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url('../images/header/hero-pc@2x.jpg');
+          }
+          @media screen and (min-device-pixel-ratio: 3),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+            background-image: url('../images/header/hero-pc@3x.jpg');
+          }
+        }
+      }
+      // Слайдер два
+      &:nth-child(2) {
+        @media screen and (min-width: $desktop) {
+          background: url('../images/header/desktop_2.jpg'),
+            linear-gradient(to right, rgba(25, 28, 38, 1), rgba(25, 28, 38, 1));
+
+          height: 680px;
+          background-size: 1045px 680px;
+
+          background-position: right;
+          background-repeat: no-repeat;
+
+          @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url('../images/header/desktop_2@2x.jpg');
+          }
+          @media screen and (min-device-pixel-ratio: 3),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+            background-image: url('../images/header/desktop_2@3x.jpg');
+          }
+        }
+      }
+
+      // Слайдер три
+      &:nth-child(3) {
+        @media screen and (min-width: $desktop) {
+          background: url('../images/header/desktop_3.jpg'),
+            linear-gradient(to right, rgba(25, 28, 38, 1), rgba(25, 28, 38, 1));
+
+          height: 680px;
+          background-size: 1045px 680px;
+
+          background-position: right;
+          background-repeat: no-repeat;
+
+          @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url('../images/header/desktop_3@2x.jpg');
+          }
+          @media screen and (min-device-pixel-ratio: 3),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+            background-image: url('../images/header/desktop_3@3x.jpg');
+          }
+        }
+      }
+    }
+  }
+}
+
+.slider-current {
+  @media screen and (max-width: $tablets - 1) {
+    display: none;
+  }
+  fill: $primary-white-color;
+  margin-bottom: 12px;
+}
+.slider-next {
+  fill: $additional-color-text;
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  @media screen and (max-width: $tablets - 1) {
+    display: none;
+  }
+}
+
+.controls {
+  @media screen and (max-width: $tablets - 1) {
+    display: none;
+  }
+  display: flex;
+  align-content: flex-end;
+
+  justify-content: flex-end;
+}
+.prev {
+  display: flex;
+  padding: 0;
+  min-width: 60px;
+  height: 24px;
+  background-color: transparent;
+
+  color: $color-rgba;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.1em;
+  margin-right: 26px;
+  border: none;
+  border-bottom: 1px solid $color-rgba;
+  outline: none;
+  transition: $transition;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    border-color: $primary-white-color;
+  }
+}
+
+.next {
+  display: flex;
+  justify-content: flex-end;
+
+  padding: 0;
+  min-width: 60px;
+  height: 24px;
+  background-color: transparent;
+
+  color: $color-rgba;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.1em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $color-rgba;
+  transition: $transition;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    border-color: $primary-white-color;
+  }
+}
+.slider-container {
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 77px;
+  align-items: flex-end;
+  @media screen and (min-width: $desktop) {
+    margin-left: 452px;
+  }
+}

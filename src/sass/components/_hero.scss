@@ -1,0 +1,108 @@
+// .hero {
+
+// }
+
+.title-p {
+  color: $color-rgba;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  color: $primary-white-color;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  margin-top: 0;
+  margin-bottom: 20px;
+  @media screen and (min-width: $desktop) {
+    font-size: 72px;
+    line-height: 1.13;
+  }
+}
+.hero-paragraph {
+  color: $additional-color-text;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  margin: 0;
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.87;
+  }
+}
+
+.container-title {
+  @media screen and (max-width: $tablets - 1) {
+    padding-top: 113px;
+    max-width: 306px;
+  }
+  @media screen and (min-width: $tablets) {
+    width: 450px;
+    display: inline-flex;
+    align-items: center;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 940px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+.hero {
+  & .container {
+    @media screen and (min-width: $tablets) {
+      display: flex;
+      justify-content: flex-end;
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+// .heading-container {
+//   @media screen and (min-width: $tablets) {
+//     // margin-right: 77px;
+//   }
+// }
+
+// .hero {
+//   @media screen and (max-width: $tablets - 1) {
+//     // margin-top: 95px;
+//   }
+
+//   // &-title {
+//   //   margin-top: 0;
+//   //   margin-bottom: 30px;
+//   //   max-width: 360px;
+//   //   margin-left: auto;
+//   //   margin-right: auto;
+
+//   //   color: $primary-white-color;
+//   //   font-weight: 900;
+//   //   font-size: 26px;
+//   //   line-height: 1.6;
+//   //   letter-spacing: 0.06em;
+//   //   text-transform: uppercase;
+
+//   //   @media screen and (min-width: $desktop) {
+//   //     max-width: 696px;
+//   //     font-size: 44px;
+//   //     line-height: 1.36;
+//   //   }
+//   // }
+// }

@@ -1,0 +1,109 @@
+<article class="header-container">
+  <div class="overlay">
+    <ul class="standart-ul slider-track">
+      <li class="slider-item showing"></li>
+      <li class="slider-item"></li>
+      <li class="slider-item"></li>
+    </ul>
+    <header class="header">
+      <nav class="container header-menu header-nav">
+        <a class="standart-a logo" href="./index.html">
+          <svg width="69" height="56">
+            <use href="./images/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          open
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+            <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu close>
+          <ul class="site-nav standart-ul">
+            <li class="item">
+              <a class="standart-a" href="#about-us " open>О нас</a>
+            </li>
+            <li class="item">
+              <a class="standart-a" href="#service-price" open>Услуги и цены</a>
+            </li>
+            <li class="item">
+              <a class="standart-a" href="#ourmasters" open>Мастера</a>
+            </li>
+            <li class="item">
+              <a class="standart-a" href="#contacts" open>Контакты</a>
+            </li>
+          </ul>
+          <ul class="standart-ul contact-list">
+            <li class="item">
+              <a class="standart-a" href="tel:+380441111111">
+                +38 044 111 11 11</a
+              >
+            </li>
+            <li class="item">
+              <button class="button" data-modal-open open>
+                онлайн-запись
+              </button>
+            </li>
+          </ul>
+          <ul class="standart-ul social-link hr-header">
+            <li class="item">
+              <a
+                class="standart-a"
+                target="_blank"
+                href="https://www.instagram.com"
+                >Instagram</a
+              >
+            </li>
+            <li class="item">
+              <a
+                class="standart-a"
+                target="_blank"
+                href="https://www.youtube.com"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- end header -->
+    <!-- hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="container-title">
+          <div class="heading-container">
+            <p class="hr-two title-p">A hair salon for men in Kyiv</p>
+            <h1 class="hero-title">BarberShop</h1>
+            <p class="hero-paragraph">
+              Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно
+              и со вкусом.
+            </p>
+          </div>
+          <ul class="standart-ul slider-container">
+            <li class="slider-line showing"></li>
+            <li class="slider-line"></li>
+            <li class="slider-line"></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- <a href="#active">Вперед</a>
+      <a href="#active">Назад</a> -->
+    </section>
+    <div class="controls container">
+      <button class="prev" id="prev">Назад</button>
+      <button class="next" id="next">Вперед</button>
+    </div>
+  </div>
+</article>

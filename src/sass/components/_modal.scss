@@ -1,0 +1,187 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  background-color: #fff;
+
+  @media screen and (max-width: $mobile-min) {
+    width: 95%;
+  }
+
+  @media screen and (min-width: $mobile) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: $tablets) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 30%;
+  }
+}
+
+.modal-title {
+  margin-top: 0;
+  margin-bottom: 44px;
+
+  font-family: Raleway;
+
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.05em;
+  width: 100%;
+
+  color: $primary-color-text;
+}
+
+.form-input {
+  margin-bottom: 44px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid $primary-color-text;
+  width: 100%;
+  outline: transparent;
+
+  &:focus,
+  &:hover {
+    border-color: $accent-color;
+    transition: border-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:focus ~ .form-label,
+  &:hover ~ .form-label,
+  &:not(:placeholder-shown) + .form-label {
+    color: $accent-color;
+    transform: translateY(-100%);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.form-field {
+  position: relative;
+}
+
+.form-label {
+  position: absolute;
+  left: 4px;
+  transform: translateY(50%);
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.form-field.area {
+  margin-bottom: 44px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  outline: transparent;
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid $primary-color-text;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  &:focus,
+  &:hover {
+    border-color: $accent-color;
+    transition: border-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: center;
+
+  & .send-btn {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    outline: transparent;
+
+    color: $primary-color-text;
+
+    border: 1px solid $accent-color;
+    border-radius: 25px;
+    padding: 12px 20px;
+    width: 160px;
+    height: 40px;
+    background: $primary-white-color;
+
+    &:hover,
+    &:focus {
+      color: $primary-white-color;
+      background-color: $accent-color;
+      transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+.close-btn {
+  fill: $primary-color-text;
+}
+
+.modal-button.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  width: 25px;
+  height: 25px;
+  background-color: $primary-white-color;
+  border: none;
+  // padding: 0;
+
+  &:hover,
+  &:focus .close-btn {
+    fill: $accent-color;
+  }
+}

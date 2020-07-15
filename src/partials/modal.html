@@ -1,27 +1,46 @@
 <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-        <p class="modal-title">Онлайн-запись</p>
-        <form class="modal-form" autocomplete="off">
-            <div class="form-field">
-                <input type="text" class="form-input" name="name" id="name" placeholder=" ">
-                <label for="name" class="form-label">имя</label>
-            </div>
-            <div class="form-field">
-                <input type="tel" class="form-input" name="tel" id="tel" placeholder=" ">
-                <label for="tel" class="form-label">телефон</label>
-            </div>
-            <div class="form-field area">
-                <textarea name="text-area" id="comment" cols="30" rows="3" placeholder="сообщение"></textarea>
-            </div>
-            <div class="submit-btn">
-                <button type="submit" class="send-btn"> отправить</button>
-            </div>
-            <button class="modal-button close" data-modal-close>
-                <svg class="close-btn" width="25" height="25">
-                    <use href="./images/modal-img/close-modal.svg#iconclose-btn"></use>
-                </svg>
-            </button>
-        </form>
-    </div>
+  <div class="modal">
+    <p class="modal-title">Онлайн-запись</p>
+    <form class="modal-form" autocomplete="off">
+      <div class="form-field">
+        <input
+          type="text"
+          class="form-input"
+          name="name"
+          id="name"
+          placeholder=" "
+        />
+        <label for="name" class="form-label">имя</label>
+      </div>
+      <div class="form-field">
+        <input
+          type="tel"
+          class="form-input"
+          name="tel"
+          id="tel"
+          placeholder=" "
+        />
+        <label for="tel" class="form-label">телефон</label>
+      </div>
+      <div class="form-field area">
+        <textarea
+          class="form-input"
+          name="text-area"
+          id="comment"
+          cols="30"
+          rows="3"
+          placeholder=" "
+        ></textarea>
+        <label for="comment" class="form-label">cообщение</label>
+      </div>
+      <div class="submit-btn">
+        <button type="submit" class="send-btn">отправить</button>
+      </div>
+      <button type="button" class="modal-button close" data-modal-close>
+        <svg class="close-btn" width="25" height="25">
+          <use href="./images/sprite.svg#iconclose-btn"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
 </div>
-

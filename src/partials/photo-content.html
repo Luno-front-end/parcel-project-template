@@ -1,49 +1,253 @@
-    <section class="container content-section">
-        
-            <div class="photo">
-                <p class="paragraph">на латинском языке “барба” означает “борода”</p>
-            </div>
-            <ul class="photo-content standart-ul">
-                <li class="photo-content-item">
-                    <img class="content-img" 
-                        srcset="./images/photo-content-img/hair-cut.jpg 1x,
-                        ./images/photo-content-img/hair-cut@2x.jpg 2x,
-                        ./images/photo-content-img/hair-cut@3x.jpg 3x" 
-                        src="./images/photo-content-img/hair-cut.jpg" alt="hair-cut"
-                        sizes="100vw, (min-width: 481px) 418px, (min-width: 769px) 330px, (min-width: 1200px) 270px"
-                        >
-                </li>
-                <li class="photo-content-item">
-                    <img class="content-img" 
-                        srcset="
-                        ./images/photo-content-img/beard-shaving.jpg 1x,
-                        ./images/photo-content-img/beard-shaving@2x.jpg 2x,
-                        ./images/photo-content-img/beard-shaving@3x.jpg 3x" 
-                        src="./images/photo-content-img/beard-shaving.jpg" alt="beard-shaving"
-                        sizes="100vw, (min-width: 481px) 418px, (min-width: 769px) 330px, (min-width: 1201px) 270px"
-                        >
-                </li>
-                <li class="photo-content-item">
-                    <img class="content-img" 
-                    srcset="
-                    ./images/photo-content-img/hot-towel.jpg 1x,
-                    ./images/photo-content-img/hot-towel@3x.jpg 3x" 
-                        src="./images/photo-content-img/hot-towel.jpg" alt="hot-towel"
-                        sizes="100vw, (min-width: 481px) 418px, (min-width: 769px) 330px, (min-width: 1201px) 270px"
-                        >
+<section class="container content-section">
+  <div class="photo">
+    <p class="paragraph">на латинском языке “барба” означает “борода”</p>
+  </div>
+  <ul class="photo-content standart-ul">
+    <li class="photo-content-item">
+      <picture>
+        <source
+          srcset="
+            ./images/photo-content-img/hair-cut-mob-418.webp    1x,
+            ./images/photo-content-img/hair-cut-mob-418@2x.webp 2x,
+            ./images/photo-content-img/hair-cut-mob-418@3x.webp 3x
+          "
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/photo-content-img/hair-cut-mob-418.jpg    1x,
+            ./images/photo-content-img/hair-cut-mob-418@2x.jpg 2x,
+            ./images/photo-content-img/hair-cut-mob-418@3x.jpg 3x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ./images/photo-content-img/hair-cut-330-tab.webp    1x,
+            ./images/photo-content-img/hair-cut-330-tab@2x.webp 2x,
+            ./images/photo-content-img/hair-cut-330-tab@3x.webp 3x
+          "
+          media="(min-width: 768px) and (max-width: 1199px)"
+          type="image/webp"
+        />
 
-                    <!-- ./images/photo-content-img/hot-towel@2.jpg 2x, -->
-                </li>
-                <li class="photo-content-item">
-                    <img class="content-img" 
-                        srcset="
-                        ./images/photo-content-img/head-shaving.jpg 1x,
-                        ./images/photo-content-img/head-shaving@2x.jpg 2x,
-                        ./images/photo-content-img/head-shaving@3x.jpg 3x" 
-                        src="./images/photo-content-img/head-shaving.jpg" alt="head-shaving"
-                        sizes="100vw, (min-width: 481px) 418px, (min-width: 769px) 330px, (min-width: 1201px) 270px"
-                        >
-                </li>
-            </ul>
-        
-    </section>
+        <source
+          srcset="
+            ./images/photo-content-img/hair-cut-330-tab.jpg    1x,
+            ./images/photo-content-img/hair-cut-330-tab@2x.jpg 2x,
+            ./images/photo-content-img/hair-cut-330-tab@3x.jpg 3x
+          "
+          media="(min-width: 768px) and (max-width: 1199px)"
+        />
+        <source
+          srcset="
+            ./images/photo-content-img/hair-cut-270-dt.webp    1x,
+            ./images/photo-content-img/hair-cut-270-dt@2x.webp 2x,
+            ./images/photo-content-img/hair-cut-270-dt@3x.webp 3x
+          "
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/photo-content-img/hair-cut-270-dt.jpg    1x,
+            ./images/photo-content-img/hair-cut-270-dt@2x.jpg 2x,
+            ./images/photo-content-img/hair-cut-270-dt@3x.jpg 3x
+          "
+          media="(min-width: 1200px)"
+        />
+
+        <img
+          class="img"
+          src="./images/photo-content-img/hair-cut-mob-418.jpg"
+          alt="hair-cut"
+        />
+      </picture>
+    </li>
+    <li class="photo-content-item">
+      <picture>
+        <source
+          srcset="
+            ./images/photo-content-img/beard-shaving-mob-418.webp    1x,
+            ./images/photo-content-img/beard-shaving-mob-418@2x.webp 2x,
+            ./images/photo-content-img/beard-shaving-mob-418@3x.webp 3x
+          "
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/photo-content-img/beard-shaving-mob-418.jpg    1x,
+            ./images/photo-content-img/beard-shaving-mob-418@2x.jpg 2x,
+            ./images/photo-content-img/beard-shaving-mob-418@3x.jpg 3x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ./images/photo-content-img/beard-shaving-tab-330.webp    1x,
+            ./images/photo-content-img/beard-shaving-tab-330@2x.webp 2x,
+            ./images/photo-content-img/beard-shaving-tab-330@3x.webp 3x
+          "
+          media="(min-width: 768px) and (max-width: 1199px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/photo-content-img/beard-shaving-tab-330.jpg    1x,
+            ./images/photo-content-img/beard-shaving-tab-330@2x.jpg 2x,
+            ./images/photo-content-img/beard-shaving-tab-330@3x.jpg 3x
+          "
+          media="(min-width: 768px) and (max-width: 1199px)"
+        />
+        <source
+          srcset="
+            ./images/photo-content-img/beard-shaving-dt-270.webp    1x,
+            ./images/photo-content-img/beard-shaving-dt-270@2x.webp 2x,
+            ./images/photo-content-img/beard-shaving-dt-270@3x.webp 3x
+          "
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+
+        <source
+          srcset="
+            ./images/photo-content-img/beard-shaving-dt-270.jpg    1x,
+            ./images/photo-content-img/beard-shaving-dt-270@2x.jpg 2x,
+            ./images/photo-content-img/beard-shaving-dt-270@3x.jpg 3x
+          "
+          media="(min-width: 1200px)"
+        />
+
+        <img
+          class="img"
+          src="./images/photo-content-img/hair-cut-mob-418.jpg"
+          alt="hair-cut"
+        />
+      </picture>
+    </li>
+    <li class="photo-content-item">
+      <picture>
+        <source
+          srcset="
+            ./images/photo-content-img/hot-towel-mob-418.webp    1x,
+            ./images/photo-content-img/hot-towel-mob-418@2x.webp 2x,
+            ./images/photo-content-img/hot-towel-mob-418@3x.webp 3x
+          "
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/photo-content-img/hot-towel-mob-418.jpg    1x,
+            ./images/photo-content-img/hot-towel-mob-418@2x.jpg 2x,
+            ./images/photo-content-img/hot-towel-mob-418@3x.jpg 3x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ./images/photo-content-img/hot-towel-tab-330.webp    1x,
+            ./images/photo-content-img/hot-towel-tab-330@2x.webp 2x,
+            ./images/photo-content-img/hot-towel-tab-330@3x.webp 3x
+          "
+          media="(min-width: 768px) and (max-width: 1199px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/photo-content-img/hot-towel-tab-330.jpg    1x,
+            ./images/photo-content-img/hot-towel-tab-330@2x.jpg 2x,
+            ./images/photo-content-img/hot-towel-tab-330@3x.jpg 3x
+          "
+          media="(min-width: 768px) and (max-width: 1199px)"
+        />
+        <source
+          srcset="
+            ./images/photo-content-img/hot-towel-dt-270.webp    1x,
+            ./images/photo-content-img/hot-towel-dt-270@2x.webp 2x,
+            ./images/photo-content-img/hot-towel-dt-270@3x.webp 3x
+          "
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/photo-content-img/hot-towel-dt-270.jpg    1x,
+            ./images/photo-content-img/hot-towel-dt-270@2x.jpg 2x,
+            ./images/photo-content-img/hot-towel-dt-270@3x.jpg 3x
+          "
+          media="(min-width: 1200px)"
+        />
+
+        <img
+          class="img"
+          src="./images/photo-content-img/hot-towel-mob-418.jpg"
+          alt="hair-cut"
+        />
+      </picture>
+    </li>
+    <li class="photo-content-item">
+      <picture>
+        <source
+          srcset="
+            ./images/photo-content-img/head-shaving-mob-418.webp    1x,
+            ./images/photo-content-img/head-shaving-mob-418@2x.webp 2x,
+            ./images/photo-content-img/head-shaving-mob-418@3x.webp 3x
+          "
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/photo-content-img/head-shaving-mob-418.jpg    1x,
+            ./images/photo-content-img/head-shaving-mob-418@2x.jpg 2x,
+            ./images/photo-content-img/head-shaving-mob-418@3x.jpg 3x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ./images/photo-content-img/head-shaving-tab-330.webp    1x,
+            ./images/photo-content-img/head-shaving-tab-330@2x.webp 2x,
+            ./images/photo-content-img/head-shaving-tab-330@3x.webp 3x
+          "
+          media="(min-width: 768px) and (max-width: 1199px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/photo-content-img/head-shaving-tab-330.jpg    1x,
+            ./images/photo-content-img/head-shaving-tab-330@2x.jpg 2x,
+            ./images/photo-content-img/head-shaving-tab-330@3x.jpg 3x
+          "
+          media="(min-width: 768px) and (max-width: 1199px)"
+        />
+        <source
+          srcset="
+            ./images/photo-content-img/head-shaving-dt-270.webp    1x,
+            ./images/photo-content-img/head-shaving-dt-270@2x.webp 2x,
+            ./images/photo-content-img/head-shaving-dt-270@3x.webp 3x
+          "
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/photo-content-img/head-shaving-dt-270.jpg    1x,
+            ./images/photo-content-img/head-shaving-dt-270@2x.jpg 2x,
+            ./images/photo-content-img/head-shaving-dt-270@3x.jpg 3x
+          "
+          media="(min-width: 1200px)"
+        />
+
+        <img
+          class="img"
+          src="./images/photo-content-img/head-shaving-mob-418.jpg"
+          alt="hair-cut"
+        />
+      </picture>
+    </li>
+  </ul>
+</section>
