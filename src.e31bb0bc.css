@@ -314,6 +314,7 @@ img {
   padding: 12px 37px;
   border-radius: 25px;
   border: 1px solid #ff6c00;
+  cursor: pointer;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
@@ -463,6 +464,10 @@ img {
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.menu-open {
+  overflow: hidden;
 }
 
 @media screen and (max-width: 767px) {
@@ -1968,6 +1973,7 @@ textarea:focus, textarea:hover {
   width: 160px;
   height: 40px;
   background: #ffffff;
+  cursor: pointer;
 }
 .submit-btn .send-btn:hover, .submit-btn .send-btn:focus {
   color: #ffffff;
@@ -1987,6 +1993,7 @@ textarea:focus, textarea:hover {
   height: 25px;
   background-color: #ffffff;
   border: none;
+  cursor: pointer;
 }
 .modal-button.close:hover, .modal-button.close:focus .close-btn {
   fill: #ff6c00;
@@ -2179,6 +2186,7 @@ textarea:focus, textarea:hover {
   border-left: transparent;
   border-bottom: 1px solid;
   border-bottom-color: rgba(157, 164, 189, 0.4);
+  outline: transparent;
   transition: border-bottom-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .entry-input:hover, .entry-input:focus {
