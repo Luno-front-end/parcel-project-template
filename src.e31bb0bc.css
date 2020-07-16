@@ -462,22 +462,29 @@ img {
   display: block;
 }
 
+.menu-button.is-open {
+  position: fixed;
+  top: 48px;
+  right: 41px;
+}
+
 .menu-button.is-open .icon-menu {
   display: none;
 }
 
 .menu-open {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
-    position: absolute;
+    overflow: overlay;
+    position: fixed;
     top: 0;
     right: 0;
     min-width: 337px;
-    min-height: 100vh;
+    height: 100vh;
     background-color: #ffffff;
     box-shadow: -1px 0px 3px rgba(0, 0, 0, 0.16), -2px 0px 4px rgba(0, 0, 0, 0.08), -4px 0px 8px rgba(0, 0, 0, 0.04);
     padding: 118px 40px;
