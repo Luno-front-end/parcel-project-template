@@ -183,8 +183,7 @@ textarea {
   height: 25px;
   background-color: $primary-white-color;
   border: none;
-  // padding: 0;
-
+  cursor: pointer;
   &:hover,
   &:focus .close-btn {
     fill: $accent-color;
