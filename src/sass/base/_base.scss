@@ -50,6 +50,8 @@ img {
   padding: 12px 37px;
   border-radius: 25px;
   border: 1px solid $accent-color;
+  cursor: pointer;
+
   @media screen and (min-width: $tablets) {
     padding: 12px 20px;
     color: $primary-white-color;
@@ -97,5 +99,16 @@ img {
       background-color: $primary-color-text;
       margin-right: 40px;
     }
+  }
+}
+.hr-footer {
+  align-items: center;
+  &::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: $primary-color-text;
+    margin-right: 40px;
   }
 }

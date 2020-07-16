@@ -1,17 +1,3 @@
-// p, h2, ul, li{
-//     margin: 0;
-//     padding: 0;
-//     display: block;
-// }
-
-// li{
-//     list-style-type: none;
-// }
-
-// a{
-//     text-decoration: none;
-// }
-
 .default-section-service {
   background-color: $service-color;
   background-image: url(../images/services-and-price/mobile/small-size/background-image-services-mobile.png);
@@ -50,11 +36,6 @@
 .section-service-price {
   padding-top: 84px;
   padding-bottom: 84px;
-  // background-image: url(../images/other/img.png);
-
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
 
   @media screen and (min-width: $tablets) {
     padding-top: 100px;
@@ -70,7 +51,7 @@
 .description {
   margin: 0;
   position: relative;
-  padding-left: 80px;
+  // padding-left: 80px;
   margin-bottom: 20px;
   font-style: normal;
   font-weight: 600;
@@ -81,15 +62,15 @@
 
   color: $color-rgba;
 
-  &::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 60px;
-    height: 1px;
-    background: $color-rgba;
-  }
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   left: 0;
+  //   top: 50%;
+  //   width: 60px;
+  //   height: 1px;
+  //   background: $color-rgba;
+  // }
 }
 
 .definition {
@@ -108,10 +89,6 @@
 
 .table-service {
   margin-bottom: 50px;
-
-  // @media screen and (max-width: 374px) {
-  //     padding: 15px;
-  // }
 
   @media screen and (max-width: $tablets-min) {
     padding: 30px;
@@ -132,7 +109,6 @@
   @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: center;
-    // padding: 40px;
   }
 }
 
@@ -164,11 +140,7 @@
 
   &-item {
     display: flex;
-    // justify-content: space-between;
     margin-bottom: 20px;
-    // @media screen and (min-width: 1200px) {
-    //     display: flex;
-    // }
 
     @media screen and (max-width: 373px) {
       align-items: center;
@@ -186,11 +158,9 @@
     margin-bottom: 8px;
     margin-right: 6px;
     border-bottom: 1px solid $border-service-section-color;
-    // width: calc((100% - 6px) / 2);
     width: 100%;
 
     @media screen and (max-width: 373px) {
-      // display: flex;
       align-items: center;
       margin-bottom: 0px;
     }
@@ -220,10 +190,6 @@
     white-space: unset;
     display: flex;
     text-align: center;
-    // max-width: 50%;
-    // justify-content: center;
-    // overflow: hidden;
-    // text-overflow: ellipsis;
   }
   @media screen and (min-width: $tablets) {
     font-size: 18px;
