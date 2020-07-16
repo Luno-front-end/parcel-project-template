@@ -70,20 +70,29 @@
 .menu-button.is-open .icon-cross {
   display: block;
 }
+.menu-button.is-open {
+  position: fixed;
+  top: 48px;
+  right: 41px;
+}
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+.menu-open {
+  overflow-y: hidden;
 }
 
 .menu-container {
   @media screen and (max-width: $tablets - 1) {
     display: none;
+    overflow: overlay;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     min-width: 337px;
-    min-height: 100vh;
+    height: 100vh;
 
     background-color: $primary-white-color;
     box-shadow: -1px 0px 3px rgba(0, 0, 0, 0.16),
